@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+
+.form-group {
+    margin-bottom: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#formsec input[type="text"] {  
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #13120033;
+    opacity: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+* {
+    scroll-behavior: smooth;
+}
+.no-scroll::-webkit-scrollbar {
+    display: none;
 }
 
-.App-link {
-  color: #61dafb;
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white;
+    border-radius: 10px;
 }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #A854E9;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+
+.swiper-pagination {
+    position: unset !important;
+}
+
+.swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    opacity: 0.23 !important;
+    background: #A854E9 !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 28px !important;
+    height: 8px !important;
+    opacity: 1 !important;
+    background: #A854E9 !important;
+    border-radius: 22px !important;
+}
+
+.swiper-slide-active div {
+    position: relative !important;
+    border-color: #A854E9 !important;
+}
+
+.swiper-slide-active div::after {
+    content: '';
+    width: 100%;
+    height: 8px;
+    position: absolute !important;
+    background-color: #A854E9;
+    left: 0;
+    bottom: 0;
+}
+
+/* .swiper-slide {
+    display: flex !important;
+    justify-content: center;
+    
+} */
+/* @media (min-width:1280px) {
+    .swiper-slide{
+        margin-right: 0 !important;
+    }
+} */
