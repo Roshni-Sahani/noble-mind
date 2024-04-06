@@ -39,7 +39,7 @@ const Faq = () => {
         <p className="font-light lg:leading-[57.6px] font-outfit text-center md:text-[48px] sm:text-[38px] text-[28px]">
           Frequently <sapn className="font-semibold"> Asked Questions</sapn>
         </p>
-        <p className="font-normal text-base font-exo text-center max-w-[497px] mx-auto pt-4 md:pb-[52px] pb-3">
+        <p className="font-normal md:text-base text-sm font-exo text-center max-w-[497px] mx-auto pt-4 md:pb-[52px] pb-3">
           Lorem ipsum dolor sit amet consectetur. Orci augue mollis eu volutpat
           mi leo. Nibh nisl consequat metus.
         </p>
@@ -53,7 +53,7 @@ const Faq = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(1)}
-              className="font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d]"
+              className="font-outfit md:text-base text-sm py-0 text-start font-medium  text-[#4d4d4d]"
             >
               What is Artificial Intelligence (AI)?
             </AccordionHeader>
@@ -116,7 +116,7 @@ const Faq = () => {
             >
               How can our employees adapt to AI integration?
             </AccordionHeader>
-            <AccordionBody className="font-exo text-base font-normal max-w-[680px]">
+            <AccordionBody className="font-exo text-base font-normal !py-0 max-w-[680px]">
               Artificial Intelligence refers to the development of computer
               systems that can perform tasks that typically require human
               intelligence. These tasks include learning, reasoning,

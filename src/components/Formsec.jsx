@@ -3,16 +3,14 @@ import girlimg from "../assets/images/girlimg.webp";
 
 const Formsec = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    number: "",
-    password: "",
-    confirmPassword: "",
+    firstname: "",
+    lastname: "",
+    email: "",
   });
   const [formErrors, setFormErrors] = useState({
-    name: "",
-    number: "",
-    password: "",
-    confirmPassword: "",
+    firstname: "",
+    lastname: "",
+    email: "",
   });
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
   const handleChange = (e) => {
@@ -25,27 +23,19 @@ const Formsec = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const regex = {
-      name: /^[a-zA-Z\s]+$/,
-      number: /^\d{10}$/,
-      password: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@])[a-zA-Z\d@]{8,}$/,
-      confirmPassword:
-        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@])[a-zA-Z\d@]{8,}$/,
+      firstname: /^[a-zA-Z\s]+$/,
+      lastname: /^[a-zA-Z\s]+$/,
+      email: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,})$/,
     };
     const errors = {};
-    if (!regex.name.test(formData.name)) {
-      errors.name = "Name is invalid.";
+    if (!regex.firstname.test(formData.firstname)) {
+      errors.firstname = "Name is invalid.";
     }
-    if (!regex.number.test(formData.number)) {
-      errors.number = "Last Name is invalid.";
+    if (!regex.lastname.test(formData.lastname)) {
+      errors.lastname = "Last Name is invalid.";
     }
-    if (!regex.password.test(formData.password)) {
-      errors.password = "Email is invalid.";
-    }
-    if (!regex.confirmPassword.test(formData.confirmPassword)) {
-      errors.confirmPassword = "Confirm password is invalid.";
-    }
-    if (formData.password !== formData.confirmPassword) {
-      errors.Message = "Passwords do not match.";
+    if (!regex.email.test(formData.email)) {
+      errors.email = "Email is invalid.";
     }
     setFormErrors(errors);
     if (Object.keys(errors).length === 0) {
@@ -55,16 +45,14 @@ const Formsec = () => {
   const handlePopupClose = () => {
     setShowSuccessPopup(false);
     setFormData({
-      name: "",
-      number: "",
-      password: "",
-      confirmPassword: "",
+      firstname: "",
+      lastname: "",
+      email: "",
     });
     setFormErrors({
-      name: "",
-      number: "",
-      password: "",
-      confirmPassword: "",
+      firstname: "",
+      lastname: "",
+      email: "",
     });
   };
   return (
@@ -90,45 +78,45 @@ const Formsec = () => {
                     type="text"
                     id="name"
                     name="name"
-                    value={formData.name}
+                    value={formData.firstname}
                     onChange={handleChange}
                     className="w-full "
                   />
-                  {formErrors.name && (
-                    <p className="error-message">{formErrors.name}</p>
+                  {formErrors.firstname && (
+                    <p className="error-message text-[red]">
+                      {formErrors.firstname}
+                    </p>
                   )}
                 </div>
                 <div className="form-group  w-full font-exo font-normal text-base text-[#5A594D]">
-                  <label htmlFor="number">Last Name</label>
+                  <label htmlFor="last">Last Name</label>
                   <input
                     type="text"
-                    id="number"
-                    name="number"
-                    value={formData.number}
+                    id="last"
+                    name="lname"
+                    value={formData.lastname}
                     onChange={handleChange}
-                    className={
-                      formErrors.number ? "error" : "w-full sm:w-[233px]"
-                    }
+                    className="w-full"
                   />
-                  {formErrors.number && (
-                    <p className="error-message">{formErrors.number}</p>
+                  {formErrors.lastname && (
+                    <p className="error-message text-[red]">
+                      {formErrors.lastname}
+                    </p>
                   )}
                 </div>
               </div>
               <div className="form-group font-exo font-normal text-base text-[#5A594D] w-full lg:w-[478px]">
-                <label htmlFor="password">Email</label>
+                <label htmlFor="email">Email</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.password}
+                  value={formData.email}
                   onChange={handleChange}
-                  className={`w-full lg:w-[454px]  border border-solid border-[#D0D0CC]  h-[48px] rounded-[8px] ${
-                    formErrors.password ? "error" : ""
-                  }`}
+                  className={`w-full lg:w-[454px]  border border-solid border-[#D0D0CC]  h-[48px] rounded-[8px]`}
                 />
-                {formErrors.password && (
-                  <p className="error-message">{formErrors.password}</p>
+                {formErrors.email && (
+                  <p className="error-message text-[red]">{formErrors.email}</p>
                 )}
               </div>
               <div className="form-group font-exo font-normal text-base text-[#5A594D] w-full lg:w-[478px]">
@@ -141,7 +129,10 @@ const Formsec = () => {
                 ></textarea>
               </div>
               <div className="flex justify-center lg:justify-start">
-                <button className="py-[14px]  relative px-[24px] overflow-hidden font-exo rounded-[4px] text-white text-base bg-bg-gradient z-[1] after:z-[-1] before:z-[-1] font-semibold border-solid border border-white  duration-300 transition-all before:absolute before:left-0 before:right-0 before:top-0 before:h-0 before:w-full before:bg-black before:duration-500 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:-full after:bg-black after:duration-500 hover:text-white hover:before:h-2/4 hover:after:h-2/4">
+                <button
+                  type="submit"
+                  className="py-[14px]  relative px-[24px] overflow-hidden font-exo rounded-[4px] text-white text-base bg-bg-gradient z-[1] after:z-[-1] before:z-[-1] font-semibold border-solid border border-white  duration-300 transition-all before:absolute before:left-0 before:right-0 before:top-0 before:h-0 before:w-full before:bg-black before:duration-500 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:-full after:bg-black after:duration-500 hover:text-white hover:before:h-2/4 hover:after:h-2/4"
+                >
                   Submit
                 </button>
               </div>

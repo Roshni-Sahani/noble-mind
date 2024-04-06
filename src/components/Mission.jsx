@@ -48,7 +48,7 @@ const Mission = () => {
       <img
         src={triangle1}
         alt="triangle1"
-        className="absolute top-0 left-[2%] hidden sm:block animate-bounce"
+        className="absolute top-0 left-[2%] hidden sm:block animate-pulse"
       />
       <img
         src={triangle1}
