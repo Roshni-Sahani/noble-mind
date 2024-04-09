@@ -31,7 +31,7 @@ const ChooseUs = () => {
   ];
   return (
     <div className="lg:mb-[150px] mb-9 relative" id="services">
-      <div className="container max-w-[1140px] mx-auto flex flex-col items-center justify-center overflow-hidden">
+      <div className="container max-w-[1140px] mx-auto px-3 flex flex-col items-center justify-center overflow-hidden">
         <p className="flex items-center font-exo font-normal text-base pl-1">
           <Star />
           Why Choose Us

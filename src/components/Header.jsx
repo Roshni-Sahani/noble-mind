@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div id="home">
       <div className="lg:h-screen md:min-h-[700px] h-[500px] bg-[url(./assets/images/herobg.webp)] relative after:absolute bg-center max-lg:after:w-full  after:h-full after:bg-white after:opacity-[0.8] after:z-[-1] z-[1]  bg-no-repeat flex flex-col">
-        <nav className="container max-w-[1140px] mx-auto">
+        <nav className="container max-w-[1140px] mx-auto px-3">
           <div className="flex items-center  py-5 justify-between">
             <div className="flex items-center">
               <Logo />
@@ -111,7 +111,7 @@ const Header = () => {
         </nav>
         <div className="flex flex-grow items-center">
           <div
-            className="container max-w-[1140px] mx-auto  px-3"
+            className="container max-w-[1140px] mx-auto"
             data-aos="zoom-in"
           >
             <div className="flex items-center justify-center lg:justify-start">

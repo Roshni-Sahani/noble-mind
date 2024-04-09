@@ -57,7 +57,7 @@ const Formsec = () => {
   };
   return (
     <div className="lg:pb-[150px] pb-9" id="formsec">
-      <div className="conatiner max-w-[1140px] mx-auto">
+      <div className="conatiner max-w-[1140px] mx-auto px-3">
         <div className="row flex lg:flex-row flex-wrap flex-col-reverse justify-center items-center">
           <div
             className="lg:w-1/2 px-3 w-full max-w-[478px]"

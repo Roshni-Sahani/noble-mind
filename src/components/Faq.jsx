@@ -24,22 +24,6 @@ function Icon({ id, open }) {
           />
         </g>
       </svg>
-
-      {/* <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        className="absolute rotate-180"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g opacity="0.7">
-          <path
-            d="M12.0008 9.0252C11.8674 9.0252 11.7381 9.0502 11.6128 9.1002C11.4874 9.1502 11.3834 9.21686 11.3008 9.3002L6.70078 13.9002C6.51745 14.0835 6.42578 14.3169 6.42578 14.6002C6.42578 14.8835 6.51745 15.1169 6.70078 15.3002C6.88411 15.4835 7.11745 15.5752 7.40078 15.5752C7.68411 15.5752 7.91745 15.4835 8.10078 15.3002L12.0008 11.4002L15.9008 15.3002C16.0841 15.4835 16.3174 15.5752 16.6008 15.5752C16.8841 15.5752 17.1174 15.4835 17.3008 15.3002C17.4841 15.1169 17.5758 14.8835 17.5758 14.6002C17.5758 14.3169 17.4841 14.0835 17.3008 13.9002L12.7008 9.3002C12.6008 9.2002 12.4924 9.1292 12.3758 9.0872C12.2591 9.0452 12.1341 9.02453 12.0008 9.0252Z"
-            fill="#131200"
-          />
-        </g>
-      </svg> */}
     </div>
   );
 }
@@ -67,7 +51,7 @@ const Faq = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(1)}
-              className={`font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d] ${
+              className={`font-outfit text-base py-0 text-start font-medium  text-[black] ${
                 open === 1 ? "opacity-100" : "opacity-70"
               } `}
             >
@@ -88,7 +72,7 @@ const Faq = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(2)}
-              className={`font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d] ${
+              className={`font-outfit text-base py-0 text-start font-medium  text-black ${
                 open === 2 ? "opacity-100" : "opacity-70"
               } `}
             >
@@ -110,7 +94,7 @@ const Faq = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(3)}
-              className={`font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d] ${
+              className={`font-outfit text-base py-0 text-start font-medium  text-black ${
                 open === 3 ? "opacity-100" : "opacity-70"
               } `}
             >
@@ -132,7 +116,7 @@ const Faq = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(4)}
-              className={`font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d] ${
+              className={`font-outfit text-base py-0 text-start font-medium  text-black ${
                 open === 4 ? "opacity-100" : "opacity-70"
               } `}
             >
@@ -153,7 +137,7 @@ const Faq = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(5)}
-              className={`font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d] ${
+              className={`font-outfit text-base py-0 text-start font-medium  text-black ${
                 open === 5 ? "opacity-100" : "opacity-70"
               } `}
             >

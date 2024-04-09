@@ -7,7 +7,7 @@ const Footer = () => {
       className="bg-[url(./assets/images/footerbg.webp)] bg-cover bg-no-repeat"
       id="blog"
     >
-      <div className="max-w-[1140px] container mx-auto">
+      <div className="max-w-[1140px] container mx-auto px-3">
         <div className="flex flex-row flex-wrap sm:pt-[140px] pt-[100px]">
           <div className="md:w-1/2 w-full px-3">
             <Logo1/>
