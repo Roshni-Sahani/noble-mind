@@ -40,7 +40,7 @@ email:""
     };
   return (
     <div className="px-3">
-      <div className="conatiner max-w-[1140PX] px-3 mx-auto bg-[url(./assets/images/formbg.webp)]  bg-no-repeat bg-cover bg-center rounded-[20px] sm:py-[60px] py-[30px] sm:translate-y-[35%] translate-y-[20%]">
+      <div className="conatiner max-w-[1140PX] mx-auto bg-[url(./assets/images/formbg.webp)]  bg-no-repeat bg-cover bg-center rounded-[20px] sm:py-[60px] py-[30px] sm:translate-y-[35%] translate-y-[20%]">
         <div>
           <p
             className="text-white  md:text-[48px] sm:text-[38px] text-[28px] font-outfit lg:leading-[57.6px] text-center"

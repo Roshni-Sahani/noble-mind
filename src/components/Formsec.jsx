@@ -57,7 +57,7 @@ const Formsec = () => {
   };
   return (
     <div className="lg:pb-[150px] pb-9" id="formsec">
-      <div className="conatiner max-w-[1140px] px-3 mx-auto">
+      <div className="conatiner max-w-[1140px] mx-auto">
         <div className="row flex lg:flex-row flex-wrap flex-col-reverse justify-center items-center">
           <div
             className="lg:w-1/2 px-3 w-full max-w-[478px]"
@@ -77,7 +77,7 @@ const Formsec = () => {
                   <input
                     type="text"
                     id="name"
-                    name="name"
+                    name="firstname"
                     value={formData.firstname}
                     onChange={handleChange}
                     className="w-full "
@@ -93,7 +93,7 @@ const Formsec = () => {
                   <input
                     type="text"
                     id="last"
-                    name="lname"
+                    name="lastname"
                     value={formData.lastname}
                     onChange={handleChange}
                     className="w-full"

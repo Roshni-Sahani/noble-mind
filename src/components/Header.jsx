@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/images/logo.webp";
-import { Star } from "./Icon";
+import { Logo, Star } from "./Icon";
 const Header = () => {
   const [show, setshow] = useState(true);
   function view() {
@@ -14,10 +13,10 @@ const Header = () => {
   return (
     <div id="home">
       <div className="lg:h-screen md:min-h-[700px] h-[500px] bg-[url(./assets/images/herobg.webp)] relative after:absolute bg-center max-lg:after:w-full  after:h-full after:bg-white after:opacity-[0.8] after:z-[-1] z-[1]  bg-no-repeat flex flex-col">
-        <nav className="container max-w-[1140px] mx-auto  px-3">
+        <nav className="container max-w-[1140px] mx-auto">
           <div className="flex items-center  py-5 justify-between">
             <div className="flex items-center">
-              <img src={logo} alt="logo" />
+              <Logo />
             </div>
             <ul
               className={`flex items-center gap-6 mb-0 justify-center mobileView ${
@@ -78,10 +77,12 @@ const Header = () => {
                   FAQ
                 </a>
               </li>
-              <li>
-                <button className="py-[14px]  relative px-[24px] overflow-hidden font-exo rounded-[4px] text-white text-base bg-bg-gradient z-[1] after:z-[-1] before:z-[-1] font-semibold border-solid border border-white  duration-300 transition-all before:absolute before:left-0 before:right-0 before:top-0 before:h-0 before:w-full before:bg-black before:duration-500 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:-full after:bg-black after:duration-500 hover:text-white hover:before:h-2/4 hover:after:h-2/4">
-                  Contact Us
-                </button>
+              <li onClick={view}>
+                <a href="#formsec">
+                  <button className="py-[14px]  relative px-[24px] overflow-hidden font-exo rounded-[4px] text-white text-base bg-bg-gradient z-[1] after:z-[-1] before:z-[-1] font-semibold border-solid border border-white  duration-300 transition-all before:absolute before:left-0 before:right-0 before:top-0 before:h-0 before:w-full before:bg-black before:duration-500 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:-full after:bg-black after:duration-500 hover:text-white hover:before:h-2/4 hover:after:h-2/4">
+                    Contact Us
+                  </button>
+                </a>
               </li>
             </ul>
             <label

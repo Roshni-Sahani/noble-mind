@@ -15,13 +15,13 @@ const ChooseUs = () => {
     },
     {
       id: 2,
-      title: "Customer-Centric",
-      para: "Prioritize and anticipate client needs, ensuring our technology solutions consistently deliver unparalleled value.",
+      title: "Workplace Harmony",
+      para: "Create a nurturing and peaceful environment for our staff, fostering growth, well-being, and unity. We are more than a team; we are a family..",
     },
     {
       id: 3,
-      title: "Customer-Centric",
-      para: "Prioritize and anticipate client needs, ensuring our technology solutions consistently deliver unparalleled value.",
+      title: "Ethical Leadership",
+      para: "Maintain the highest standards in all practices, ensuring our solutions are responsible, safe, and transparent.",
     },
     {
       id: 4,
@@ -31,7 +31,7 @@ const ChooseUs = () => {
   ];
   return (
     <div className="lg:mb-[150px] mb-9 relative" id="services">
-      <div className="container max-w-[1140px] mx-auto px-3 flex flex-col items-center justify-center overflow-hidden">
+      <div className="container max-w-[1140px] mx-auto flex flex-col items-center justify-center overflow-hidden">
         <p className="flex items-center font-exo font-normal text-base pl-1">
           <Star />
           Why Choose Us
@@ -72,10 +72,10 @@ const ChooseUs = () => {
                   <span className="border-[7px] text-sm font-bold font-Outfit flex items-center justify-center rounded-full overflow-hidden bg-gradient-to-tr from-[#A854E9] to-[#4F91FC] bg-clip-text text-transparent border-[#F4EAFC] h-9 w-9">
                     {items.id}
                   </span>
-                  <p className="mt-3 text-xl font-normal font-Outfit text-[#131200]">
+                  <p className="mt-3 text-xl font-normal font-outfit text-[#131200]">
                     {items.title}
                   </p>
-                  <p className="mt-1 text-base font-Exo font-normal text-[#5A594D]">
+                  <p className="mt-1 text-base font-exo font-normal text-[#5A594D]">
                     {items.para}
                   </p>
                 </div>

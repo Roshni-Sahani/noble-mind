@@ -1,6 +1,5 @@
-import React from "react";
-import footlogo from "../assets/images/footlogo.webp";
-import { Facebook, Instagram, Linkedin, Twitter } from "./Icon";
+import React from "react";  
+import { Facebook, Instagram, Linkedin, Logo1, Twitter } from "./Icon";
 
 const Footer = () => {
   return (
@@ -8,10 +7,10 @@ const Footer = () => {
       className="bg-[url(./assets/images/footerbg.webp)] bg-cover bg-no-repeat"
       id="blog"
     >
-      <div className="max-w-[1140px] px-3 container mx-auto">
+      <div className="max-w-[1140px] container mx-auto">
         <div className="flex flex-row flex-wrap sm:pt-[140px] pt-[100px]">
           <div className="md:w-1/2 w-full px-3">
-            <img src={footlogo} alt="footlogo" />
+            <Logo1/>
             <p className="text-white font-normal text-base font-exo sm:pt-[28px] pt-3 pb-2">
               Follow Us
             </p>

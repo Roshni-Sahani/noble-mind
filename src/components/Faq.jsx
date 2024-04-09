@@ -14,9 +14,7 @@ function Icon({ id, open }) {
         height="25"
         viewBox="0 0 25 25"
         fill="none"
-        className={`${
-          id === open ? "" : "rotate-180"
-        } h-5 w-5   transition-transform`}
+        className={`${id === open ? "rotate-180" : ""}    transition-transform`}
         xmlns="http://www.w3.org/2000/svg"
       >
         <g opacity="0.7">
@@ -26,6 +24,22 @@ function Icon({ id, open }) {
           />
         </g>
       </svg>
+
+      {/* <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        className="absolute rotate-180"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g opacity="0.7">
+          <path
+            d="M12.0008 9.0252C11.8674 9.0252 11.7381 9.0502 11.6128 9.1002C11.4874 9.1502 11.3834 9.21686 11.3008 9.3002L6.70078 13.9002C6.51745 14.0835 6.42578 14.3169 6.42578 14.6002C6.42578 14.8835 6.51745 15.1169 6.70078 15.3002C6.88411 15.4835 7.11745 15.5752 7.40078 15.5752C7.68411 15.5752 7.91745 15.4835 8.10078 15.3002L12.0008 11.4002L15.9008 15.3002C16.0841 15.4835 16.3174 15.5752 16.6008 15.5752C16.8841 15.5752 17.1174 15.4835 17.3008 15.3002C17.4841 15.1169 17.5758 14.8835 17.5758 14.6002C17.5758 14.3169 17.4841 14.0835 17.3008 13.9002L12.7008 9.3002C12.6008 9.2002 12.4924 9.1292 12.3758 9.0872C12.2591 9.0452 12.1341 9.02453 12.0008 9.0252Z"
+            fill="#131200"
+          />
+        </g>
+      </svg> */}
     </div>
   );
 }
@@ -53,7 +67,9 @@ const Faq = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(1)}
-              className="font-outfit md:text-base text-sm py-0 text-start font-medium  text-[#4d4d4d]"
+              className={`font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d] ${
+                open === 1 ? "opacity-100" : "opacity-70"
+              } `}
             >
               What is Artificial Intelligence (AI)?
             </AccordionHeader>
@@ -72,7 +88,9 @@ const Faq = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(2)}
-              className="font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d]"
+              className={`font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d] ${
+                open === 2 ? "opacity-100" : "opacity-70"
+              } `}
             >
               {" "}
               How does AI benefit our company?
@@ -85,14 +103,16 @@ const Faq = () => {
             </AccordionBody>
           </Accordion>
           <Accordion
-            className={` border-[#A854E933] border mb-[18px] rounded-[6px] py-6 px-6 shadow-[0px_4px_32px_0px_#00000014] relative after:absolute after:w-full after:h-[5px] after:bg-[#A854E9] after:bottom-0 after:left-0 after:right-0
+            className={`border-[#A854E933] border mb-[18px] rounded-[6px] py-6 px-6 shadow-[0px_4px_32px_0px_#00000014] relative after:absolute after:w-full after:h-[5px] after:bg-[#A854E9] after:bottom-0 after:left-0 after:right-0
              ${open === 3 ? "border-[#A854E9] !after:block" : "after:hidden"}`}
             open={open === 3}
             icon={<Icon id={3} open={open} />}
           >
             <AccordionHeader
               onClick={() => handleOpen(3)}
-              className="font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d]"
+              className={`font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d] ${
+                open === 3 ? "opacity-100" : "opacity-70"
+              } `}
             >
               {" "}
               What types of AI technologies are relevant to our industry?
@@ -112,7 +132,9 @@ const Faq = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(4)}
-              className="font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d]"
+              className={`font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d] ${
+                open === 4 ? "opacity-100" : "opacity-70"
+              } `}
             >
               How can our employees adapt to AI integration?
             </AccordionHeader>
@@ -131,7 +153,9 @@ const Faq = () => {
           >
             <AccordionHeader
               onClick={() => handleOpen(5)}
-              className="font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d]"
+              className={`font-outfit text-base py-0 text-start font-medium  text-[#4d4d4d] ${
+                open === 5 ? "opacity-100" : "opacity-70"
+              } `}
             >
               How can our company ensure data security with AI?
             </AccordionHeader>
@@ -147,7 +171,7 @@ const Faq = () => {
       <img
         src={triangle1}
         alt="triangle1"
-        className="absolute top-0 left-[2%] hidden sm:block animate-bounce"
+        className="absolute top-0 left-[2%] hidden sm:block animate-pulse"
       />
       <img
         src={triangle1}
