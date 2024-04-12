@@ -6,7 +6,7 @@ import triangle1 from "../assets/images/triangle1.webp";
 const Mission = () => {
   return (
     <div className="lg:py-[150px] py-9 relative" id="aboutus">
-      <div className="container max-w-[1140px] mx-auto">
+      <div className="container max-w-[1140px] mx-auto px-3">
         <div className="flex flex-row flex-wrap">
           <div className="lg:w-1/2 px-3 w-full flex justify-center">
             <div className="lg:pr-6" data-aos="zoom-in">

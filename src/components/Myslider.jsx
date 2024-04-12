@@ -87,7 +87,7 @@ const ChooseUs = () => {
           </div>
         </div>
         <div data-aos="zoom-in">
-          <img src={bigimg} alt="bigimg" className="rounded-[24px] mt-9" />
+          <img src={bigimg} alt="bigimg" className="rounded-[24px] mt-9 sm:h-[527px] h-[294px] object-cover" />
         </div>
       </div>
       <img

@@ -111,7 +111,7 @@ const Header = () => {
         </nav>
         <div className="flex flex-grow items-center">
           <div
-            className="container max-w-[1140px] mx-auto"
+            className="container max-w-[1140px] mx-auto px-3"
             data-aos="zoom-in"
           >
             <div className="flex items-center justify-center lg:justify-start">
